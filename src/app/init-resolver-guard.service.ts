@@ -17,7 +17,7 @@ export class InitGuard implements CanActivate {
     // charge à lots of code, like translate, logos, etc.
     return of(true)
       .pipe(
-        delay(10000),
+        delay(1000),
         tap(() => this.initNotifierService.haveBeenInitialized())
         );
   }
